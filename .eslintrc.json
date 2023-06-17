@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@hapi/recommended",
+    "plugin:@hapi/module",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@hapi/eslint-plugin"],
+  "rules": {
+    "@hapi/capitalize-modules": ["warn", "global-scope-only"],
+    "@hapi/for-loop": ["warn", { "maxDepth": 3, "startIterator": "i" }],
+    "@hapi/no-var": "error",
+    "@hapi/scope-start": "off",
+    "@hapi/no-arrowception": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "brace-style": ["off", "stroustrup"],
+    "no-undef": "off",
+    "no-console": "warn",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "padded-blocks": "off",
+    "padding-line-between-statements": [
+      "off",
+      { "blankLine": "never", "prev": "*", "next": "*" }
+    ]
+  }
+}
