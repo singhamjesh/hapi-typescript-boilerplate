@@ -1,2 +1,11 @@
-# hapi-boilerplate
-Hapi Js boilerplate 
+# hapijs + typescript boilerplate
+
+```
+Hapi.js
+Typescript
+Elasticsearch
+Agenda
+Swagger
+Mongodb
+Socket.io
+```
